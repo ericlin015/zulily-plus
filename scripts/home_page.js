@@ -1,18 +1,27 @@
-var stuff = [];
+/*var stuff = [];
 stuff.push($('.clearfix')[4]);
 stuff.push($('.clearfix')[6]);
 stuff.push($('.clearfix')[7]);
 stuff.push($('.clearfix')[8]);
 stuff.push($('.clearfix')[9]);
-stuff.push($('.clearfix')[10]);
+stuff.push($('.clearfix')[10]);*/
+
+
+// delete homepage fillers
+$('.homepage-filler').remove();
+
+
+
+
+// kids
 var kids = $('#category-kids');
 var kidsRows = kids.children();
 var kidsEvents = [];
 for (var i = 1; i < kidsRows.length; i++) {
 //  console.log(kidsRows.eq(i));
-  if (kidsRows.eq(i)[0].className !== 'homepage-filler columns-1') {
+//  if (kidsRows.eq(i)[0].className !== 'homepage-filler columns-1') {
     kidsEvents.push(kidsRows[i]);
-  }
+//  }
 /*  for (var j = 0; j < kidsRows.eq(i).children().length; j++) {
     kidsEvents.push(kidsRows.eq(i).children()[j]);
   }*/
@@ -27,9 +36,9 @@ for (var i = 1; i < kidsRows.length; i++) {
 var kidsEventsHTML = '';
 
 for (var i = 0; i < kidsEvents.length; i++) {
-  if (kidsEvents[i].className !== 'gift-card filler-tile block first') {
+//  if (kidsEvents[i].className !== 'gift-card filler-tile block first') {
     kidsEventsHTML += kidsEvents[i].innerHTML;
-  }
+//  }
   $('#' + kidsEvents[i].id).remove();
 //var child = React.createElement('div', null, document.getElementById(kidsEvents[i].id).text());
 //var root = React.createElement('div', { class: 'single-item' }, child);
@@ -166,5 +175,3 @@ $("img.lazy").lazyload({
 $("img.lazy").trigger("hi");
 
 
-// delete homepage fillers
-$('.homepage-filler').remove();
