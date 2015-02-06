@@ -1,13 +1,8 @@
 {
   "manifest_version": 2,
-
   "name": "Zulily Plus",
   "description": "Stuff",
   "version": "1.0",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "permissions": [
     "https://www.zulily.com/",
     "http://www.zulily.com/"
@@ -15,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.zulily.com/*"],
-      "js": ["background.js"]
+      "js": ["libs/jquery.min.js", "libs/react.min.js", "scripts/main.js"]
     }
   ]
 }
