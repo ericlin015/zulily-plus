@@ -164,3 +164,7 @@ $("img.lazy").lazyload({
 });
 
 $("img.lazy").trigger("hi");
+
+
+// delete homepage fillers
+$('.homepage-filler').remove();
