@@ -17,12 +17,7 @@
         "libs/slick.min.js",
         "libs/jquery.lazyload.min.js",
         "scripts/urlChecker.js",
-        "scripts/main.js"
-      ]
-    },
-    {
-      "matches": ["*://*.zulily.com/"],
-      "js": [
+        "scripts/main.js",
         "scripts/home_page.js"
       ]
     }

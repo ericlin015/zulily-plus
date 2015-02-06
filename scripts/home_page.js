@@ -136,7 +136,7 @@ for (var i = 0; i < homeEventsLength; i++) {
     var homeEventsChildrenLength = homeEvents[i].children.length;
   for (var j = 0; j < homeEventsChildrenLength; j++) {
 //    console.log(menEvents[i].children[j].id);
-    $('#' + homeEvents[i].id).remove();
+    $('#' + homeEvents[i].children[0].id).remove();    
   }
 
 }
