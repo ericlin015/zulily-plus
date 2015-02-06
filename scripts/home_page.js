@@ -154,8 +154,11 @@ homeEventsHTML = '<div class="multiple-items">' + homeEventsHTML;
 homeEventsHTML += '</div>';
 $(homeEventsHTML).insertAfter( $( "#home" ) );
 
+while ($('#category-home').children().length > 2) {
+  $('#category-home').children()[2].remove();
+}
 
-
+$('<br><br>').insertAfter('#category-home');
 
 
 
