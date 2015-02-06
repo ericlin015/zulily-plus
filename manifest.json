@@ -11,7 +11,13 @@
     {
       "matches": ["*://*.zulily.com/*"],
       "css": ["css/slick.css", "css/style.css"],
-      "js": ["libs/jquery.min.js", "libs/react.min.js", "libs/slick.min.js", "scripts/main.js"]
+      "js": [
+        "libs/jquery.min.js",
+        "libs/react.min.js",
+        "libs/slick.min.js",
+        "scripts/urlChecker.js",
+        "scripts/main.js"
+      ]
     }
   ]
 }
