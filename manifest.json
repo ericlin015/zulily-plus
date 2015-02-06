@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://*.zulily.com/*"],
-      "css": ["css/slick.css", "css/slick-theme.css", "css/style.css"],
+      "css": ["css/slick.css", "css/style.css"],
       "js": [
         "libs/jquery.min.js",
         "libs/react.min.js",
@@ -18,6 +18,12 @@
         "libs/jquery.lazyload.min.js",
         "scripts/urlChecker.js",
         "scripts/main.js"
+      ]
+    },
+    {
+      "matches": ["*://*.zulily.com/"],
+      "js": [
+        "scripts/home_page.js"
       ]
     }
   ]
