@@ -10,8 +10,15 @@
   "content_scripts": [
     {
       "matches": ["*://*.zulily.com/*"],
-      "css": ["css/slick.css", "css/slick.css", "css/style.css"],
-      "js": ["libs/jquery.min.js", "libs/react.min.js", "libs/slick.min.js", "libs/jquery.lazyload.min.js", "scripts/main.js"]
+      "css": ["css/slick.css", "css/slick-theme.css", "css/style.css"],
+      "js": [
+        "libs/jquery.min.js",
+        "libs/react.min.js",
+        "libs/slick.min.js",
+        "libs/jquery.lazyload.min.js",
+        "scripts/urlChecker.js",
+        "scripts/main.js"
+      ]
     }
   ]
 }
