@@ -168,7 +168,8 @@ $('<br><br>').insertAfter('#category-home');
 $('.multiple-items').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3
+  slidesToScroll: 3,
+  dots: true
 });
 
 $("img.lazy").lazyload({ 
